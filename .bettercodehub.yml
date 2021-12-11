@@ -1,6 +1,11 @@
 component_depth: 1
 languages:
-- javascript
-exclude:
-- /benchmarks/.*
-- /examples/.*
+- name: javascript
+  production:
+    exclude:
+      - /test/.*
+      - /benchmarks/.*
+      - /examples/.*
+  test:
+    include:
+      - /test/.*
